@@ -43,7 +43,7 @@ public class Sweeping implements ActionListener,MouseListener {
 	int COL = 20;
 	int[][] data  = new int[ROW][COL];
 	JButton[][] btns = new JButton[ROW][COL];
-	int BOMBCOUNT =25;
+	int BOMBCOUNT =1;
 	int bombcode = -1; //代表地雷
 	int opened = 0;
 	int unopened = ROW*COL;
@@ -211,15 +211,15 @@ public class Sweeping implements ActionListener,MouseListener {
 		if(e.getSource() instanceof MenuItem) {
 			MenuItem item =(MenuItem)e.getSource();
 			if(item==mod_easy) {
-				this.BOMBCOUNT=25;
+				this.BOMBCOUNT=2;
 				
 			}
 			 if(item==mod_normal) {
-				this.BOMBCOUNT=35;
+				this.BOMBCOUNT=3;
 				
 			}
 			 if(item==mod_hard) {
-				this.BOMBCOUNT=45;
+				this.BOMBCOUNT=4;
 				
 			}
 			 
